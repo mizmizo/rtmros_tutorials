@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<robot name="TESTMDOFARM"
+       xmlns:xi="http://www.w3.org/2001/XInclude"
+       >
+  <link name="link0_S">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link0_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link0_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0.025" rpy="0 -0 0"/>
+      <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="link0_S">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="link1_S">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link1_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link1_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0.025" rpy="0 -0 0"/>
+      <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="link1_S">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="link2_S">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link2_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link2_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0.025" rpy="0 -0 0"/>
+      <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="link2_S">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="link3_S">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link3_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link3_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0.025" rpy="0 -0 0"/>
+      <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="link3_S">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="link4_S">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link4_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link4_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0.025" rpy="0 -0 0"/>
+      <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="link4_S">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="link5_S">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link5_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link5_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0.025" rpy="0 -0 0"/>
+      <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="link5_S">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="link6_S">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link6_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link6_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0.025" rpy="0 -0 0"/>
+      <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="link6_S">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="link7_S">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link7_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link7_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0.025" rpy="0 -0 0"/>
+      <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="link7_S">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="link8_S">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link8_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link8_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0.025" rpy="0 -0 0"/>
+      <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="link8_S">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="link9_S">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link9_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/TESTMDOFARM_meshes/link9_S_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0.025" rpy="0 -0 0"/>
+      <inertia ixx="1e-06" ixy="0" ixz="0" iyy="1e-06" iyz="0" izz="1e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="link9_S">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <joint name="link1" type="revolute">
+    <parent link="link0_S"/>
+    <child  link="link1_S"/>
+    <origin xyz="0 0 0.05" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="link1_trans" >
+    <actuator name="link1_motor" />
+    <joint name="link1" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="link1">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="link2" type="revolute">
+    <parent link="link1_S"/>
+    <child  link="link2_S"/>
+    <origin xyz="0 0 0.05" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="link2_trans" >
+    <actuator name="link2_motor" />
+    <joint name="link2" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="link2">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="link3" type="revolute">
+    <parent link="link2_S"/>
+    <child  link="link3_S"/>
+    <origin xyz="0 0 0.05" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="link3_trans" >
+    <actuator name="link3_motor" />
+    <joint name="link3" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="link3">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="link4" type="revolute">
+    <parent link="link3_S"/>
+    <child  link="link4_S"/>
+    <origin xyz="0 0 0.05" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="link4_trans" >
+    <actuator name="link4_motor" />
+    <joint name="link4" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="link4">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="link5" type="revolute">
+    <parent link="link4_S"/>
+    <child  link="link5_S"/>
+    <origin xyz="0 0 0.05" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="link5_trans" >
+    <actuator name="link5_motor" />
+    <joint name="link5" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="link5">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="link6" type="revolute">
+    <parent link="link5_S"/>
+    <child  link="link6_S"/>
+    <origin xyz="0 0 0.05" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="link6_trans" >
+    <actuator name="link6_motor" />
+    <joint name="link6" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="link6">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="link7" type="revolute">
+    <parent link="link6_S"/>
+    <child  link="link7_S"/>
+    <origin xyz="0 0 0.05" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="link7_trans" >
+    <actuator name="link7_motor" />
+    <joint name="link7" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="link7">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="link8" type="revolute">
+    <parent link="link7_S"/>
+    <child  link="link8_S"/>
+    <origin xyz="0 0 0.05" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="link8_trans" >
+    <actuator name="link8_motor" />
+    <joint name="link8" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="link8">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="link9" type="revolute">
+    <parent link="link8_S"/>
+    <child  link="link9_S"/>
+    <origin xyz="0 0 0.05" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="link9_trans" >
+    <actuator name="link9_motor" />
+    <joint name="link9" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="link9">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+</robot>

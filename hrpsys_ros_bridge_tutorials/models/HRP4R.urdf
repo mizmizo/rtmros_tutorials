@@ -1,0 +1,2056 @@
+<?xml version="1.0"?>
+<robot name="HRP4R"
+       xmlns:xi="http://www.w3.org/2001/XInclude"
+       >
+  <link name="BODY">
+    <visual>
+      <origin xyz="0 0 0.791" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/BODY_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.791" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/BODY_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="6.93472" />
+      <origin xyz="-0.0215609 0.00145914 0.141115" rpy="0 -0 0"/>
+      <inertia ixx="0.0577609" ixy="7.331e-05" ixz="0.0014889" iyy="0.0285208" iyz="-0.00075717" izz="0.0552773"/>
+    </inertial>
+  </link>
+  <gazebo reference="BODY">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="CHEST_P_LINK">
+    <visual>
+      <origin xyz="0.01 0 0.197" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/CHEST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.01 0 0.197" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/CHEST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.24072" />
+      <origin xyz="-0.00442006 0.00280574 0.0366487" rpy="0 -0 0"/>
+      <inertia ixx="0.00250228" ixy="-1.572e-05" ixz="-1.986e-05" iyy="0.00266086" iyz="0.00013179" izz="0.0015461"/>
+    </inertial>
+  </link>
+  <gazebo reference="CHEST_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="CHEST_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/CHEST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/CHEST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="6.67348" />
+      <origin xyz="-0.0286885 -0.00245957 0.204007" rpy="0 -0 0"/>
+      <inertia ixx="0.0665628" ixy="-9.681e-05" ixz="0.00599103" iyy="0.0550898" iyz="-0.00017557" izz="0.0426274"/>
+    </inertial>
+  </link>
+  <gazebo reference="CHEST_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_SHOULDER_P_LINK">
+    <visual>
+      <origin xyz="-0.04 0.17 0.285" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.04 0.17 0.285" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.420491" />
+      <origin xyz="0.00141599 -0.0425757 -0.00031503" rpy="0 -0 0"/>
+      <inertia ixx="0.00044203" ixy="4.93e-06" ixz="6.1e-07" iyy="0.00014181" iyz="-3.34e-06" izz="0.00044502"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_SHOULDER_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_SHOULDER_R_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.520709" />
+      <origin xyz="0.00019752 -8.916e-05 -0.0419114" rpy="0 -0 0"/>
+      <inertia ixx="0.00063033" ixy="-6.01e-06" ixz="-6.476e-05" iyy="0.00071812" iyz="-2.895e-05" izz="0.00030242"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_SHOULDER_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_SHOULDER_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0874" />
+      <origin xyz="-0.00273859 -0.00036268 -0.174266" rpy="0 -0 0"/>
+      <inertia ixx="0.00553694" ixy="1.18e-05" ixz="-4.295e-05" iyy="0.00556222" iyz="-9.379e-05" izz="0.00071841"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_SHOULDER_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ELBOW_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.283" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.283" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.659403" />
+      <origin xyz="-0.012221 0.00049299 -0.0727191" rpy="0 -0 0"/>
+      <inertia ixx="0.00121955" ixy="3.9e-06" ixz="4.22e-05" iyy="0.00135563" iyz="-1.497e-05" izz="0.00047041"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ELBOW_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_WRIST_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.383841" />
+      <origin xyz="-0.00749574 -9.418e-05 -0.170441" rpy="0 -0 0"/>
+      <inertia ixx="0.00027044" ixy="9.76e-06" ixz="1.07e-05" iyy="0.00027334" iyz="-1.745e-05" izz="0.00022346"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_WRIST_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_WRIST_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.234" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_WRIST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.234" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_WRIST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.254259" />
+      <origin xyz="-0.00255098 -0.00162183 0.0107468" rpy="0 -0 0"/>
+      <inertia ixx="8.763e-05" ixy="1.53e-06" ixz="3.48e-06" iyy="9.159e-05" iyz="-4.48e-06" izz="5.571e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_WRIST_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_WRIST_R_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_WRIST_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_WRIST_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.388111" />
+      <origin xyz="-0.00241915 0.00756006 -0.0756247" rpy="0 -0 0"/>
+      <inertia ixx="0.00041745" ixy="4.71e-06" ixz="-6.41e-05" iyy="0.00053559" iyz="4.177e-05" izz="0.00022792"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_WRIST_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_HAND_J0_LINK">
+    <visual>
+      <origin xyz="0.03419 0 -0.039" rpy="0 0.411898 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_HAND_J0_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.03419 0 -0.039" rpy="0 0.411898 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_HAND_J0_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0298235" />
+      <origin xyz="0.0390502 -0.0103447 -0.0258312" rpy="0 -0 0"/>
+      <inertia ixx="1.307e-05" ixy="6.2e-06" ixz="1.249e-05" iyy="2.885e-05" iyz="-4.36e-06" izz="2.119e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_HAND_J0_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_HAND_J1_LINK">
+    <visual>
+      <origin xyz="0 0 -0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_HAND_J1_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_HAND_J1_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0769648" />
+      <origin xyz="-0.00479332 8.854e-05 -0.0190228" rpy="0 -0 0"/>
+      <inertia ixx="2.17e-05" ixy="-3e-08" ixz="2.3e-07" iyy="5.741e-05" iyz="-1e-07" izz="3.728e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_HAND_J1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_F22_LINK">
+    <visual>
+      <origin xyz="0.0253 0 -0.045" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F22_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0253 0 -0.045" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F22_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.00446884" />
+      <origin xyz="0.00031853 -0.00034526 -0.0116819" rpy="0 -0 0"/>
+      <inertia ixx="3.2e-07" ixy="0" ixz="0" iyy="3.4e-07" iyz="0" izz="9e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_F22_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_F23_LINK">
+    <visual>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F23_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F23_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0028745" />
+      <origin xyz="0.00035576 0.00103228 -0.00714888" rpy="0 -0 0"/>
+      <inertia ixx="1.6e-07" ixy="2.15067e-23" ixz="-1e-08" iyy="2.1e-07" iyz="2e-08" izz="7e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_F23_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_F32_LINK">
+    <visual>
+      <origin xyz="0.0051 0 -0.045" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F32_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0051 0 -0.045" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F32_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.00446884" />
+      <origin xyz="0.00031853 -0.00034526 -0.0116819" rpy="0 -0 0"/>
+      <inertia ixx="3.2e-07" ixy="0" ixz="0" iyy="3.4e-07" iyz="0" izz="9e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_F32_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_F33_LINK">
+    <visual>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F33_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F33_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0028745" />
+      <origin xyz="0.00035576 0.00103228 -0.00714888" rpy="0 -0 0"/>
+      <inertia ixx="1.6e-07" ixy="2.15067e-23" ixz="-1e-08" iyy="2.1e-07" iyz="2e-08" izz="7e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_F33_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_F42_LINK">
+    <visual>
+      <origin xyz="-0.0151 0 -0.045" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F42_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 0 -0.045" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F42_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.00446884" />
+      <origin xyz="0.00031853 -0.00034526 -0.0116819" rpy="0 -0 0"/>
+      <inertia ixx="3.2e-07" ixy="0" ixz="0" iyy="3.4e-07" iyz="0" izz="9e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_F42_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_F43_LINK">
+    <visual>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F43_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F43_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0028745" />
+      <origin xyz="0.00035576 0.00103228 -0.00714888" rpy="0 -0 0"/>
+      <inertia ixx="1.6e-07" ixy="2.15067e-23" ixz="-1e-08" iyy="2.1e-07" iyz="2e-08" izz="7e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_F43_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_F52_LINK">
+    <visual>
+      <origin xyz="-0.0353 0 -0.045" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F52_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0353 0 -0.045" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F52_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.00446884" />
+      <origin xyz="0.00031853 -0.00034526 -0.0116819" rpy="0 -0 0"/>
+      <inertia ixx="3.2e-07" ixy="0" ixz="0" iyy="3.4e-07" iyz="0" izz="9e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_F52_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_F53_LINK">
+    <visual>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F53_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_F53_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0028745" />
+      <origin xyz="0.00035576 0.00103228 -0.00714888" rpy="0 -0 0"/>
+      <inertia ixx="1.6e-07" ixy="2.15067e-23" ixz="-1e-08" iyy="2.1e-07" iyz="2e-08" izz="7e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_F53_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="NECK_Y_LINK">
+    <visual>
+      <origin xyz="-0.04 0 0.434" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/NECK_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.04 0 0.434" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/NECK_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.412148" />
+      <origin xyz="-0.0114244 0.00157484 -0.0213489" rpy="0 -0 0"/>
+      <inertia ixx="0.00061014" ixy="4.35e-06" ixz="7.329e-05" iyy="0.00068918" iyz="-1.384e-05" izz="0.00040587"/>
+    </inertial>
+  </link>
+  <gazebo reference="NECK_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="NECK_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/NECK_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/NECK_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.222975" />
+      <origin xyz="0.00532833 -0.00053047 0.0176936" rpy="0 -0 0"/>
+      <inertia ixx="0.00069884" ixy="-7e-07" ixz="3.33e-05" iyy="0.00093286" iyz="-1.51e-06" izz="0.00100342"/>
+    </inertial>
+  </link>
+  <gazebo reference="NECK_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_SHOULDER_P_LINK">
+    <visual>
+      <origin xyz="-0.04 -0.17 0.285" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.04 -0.17 0.285" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.420491" />
+      <origin xyz="0.00141599 0.0425757 0.00031503" rpy="0 -0 0"/>
+      <inertia ixx="0.00044203" ixy="-4.93e-06" ixz="-6.1e-07" iyy="0.00014181" iyz="-3.34e-06" izz="0.00044502"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_SHOULDER_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_SHOULDER_R_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.520709" />
+      <origin xyz="0.00019752 -0.00272557 -0.0419114" rpy="0 -0 0"/>
+      <inertia ixx="0.00062647" ixy="-7.3e-06" ixz="-6.476e-05" iyy="0.00071812" iyz="1.818e-05" izz="0.00029856"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_SHOULDER_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_SHOULDER_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0874" />
+      <origin xyz="-0.00273859 -0.00036268 -0.174266" rpy="0 -0 0"/>
+      <inertia ixx="0.00553694" ixy="1.18e-05" ixz="-4.295e-05" iyy="0.00556222" iyz="-9.379e-05" izz="0.00071841"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_SHOULDER_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ELBOW_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.283" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.283" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.659403" />
+      <origin xyz="-0.012221 0.00049299 -0.0727191" rpy="0 -0 0"/>
+      <inertia ixx="0.00121955" ixy="3.9e-06" ixz="4.22e-05" iyy="0.00135563" iyz="-1.497e-05" izz="0.00047041"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ELBOW_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_WRIST_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.383841" />
+      <origin xyz="-0.00749481 9.419e-05 -0.170441" rpy="0 -0 0"/>
+      <inertia ixx="0.00027044" ixy="-9.74e-06" ixz="1.069e-05" iyy="0.00027334" iyz="1.745e-05" izz="0.00022347"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_WRIST_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_WRIST_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.234" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_WRIST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.234" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_WRIST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.254259" />
+      <origin xyz="0.00255098 0.00162183 0.0107468" rpy="0 -0 0"/>
+      <inertia ixx="8.763e-05" ixy="1.53e-06" ixz="-3.48e-06" iyy="9.159e-05" iyz="4.48e-06" izz="5.571e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_WRIST_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_WRIST_R_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_WRIST_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_WRIST_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.388111" />
+      <origin xyz="-0.00357307 -0.00756083 -0.0756243" rpy="0 -0 0"/>
+      <inertia ixx="0.00041744" ixy="-2.58e-06" ixz="-3.079e-05" iyy="0.00053272" iyz="-4.178e-05" izz="0.00022506"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_WRIST_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_HAND_J0_LINK">
+    <visual>
+      <origin xyz="0.03419 0 -0.039" rpy="0 0.411898 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_HAND_J0_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.03419 0 -0.039" rpy="0 0.411898 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_HAND_J0_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0298235" />
+      <origin xyz="0.0390502 0.0103447 -0.0258312" rpy="0 -0 0"/>
+      <inertia ixx="1.307e-05" ixy="-6.2e-06" ixz="1.249e-05" iyy="2.885e-05" iyz="4.36e-06" izz="2.119e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_HAND_J0_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_HAND_J1_LINK">
+    <visual>
+      <origin xyz="0 0 -0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_HAND_J1_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_HAND_J1_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0769648" />
+      <origin xyz="-0.00520681 -8.854e-05 -0.0190228" rpy="0 -0 0"/>
+      <inertia ixx="2.17e-05" ixy="-3e-08" ixz="-2.2e-07" iyy="5.741e-05" iyz="1e-07" izz="3.728e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_HAND_J1_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_F22_LINK">
+    <visual>
+      <origin xyz="0.0253 0 -0.045" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F22_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0253 0 -0.045" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F22_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.00446884" />
+      <origin xyz="-0.00031853 0.00034526 -0.0116819" rpy="0 -0 0"/>
+      <inertia ixx="3.2e-07" ixy="0" ixz="0" iyy="3.4e-07" iyz="0" izz="9e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_F22_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_F23_LINK">
+    <visual>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F23_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F23_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0028745" />
+      <origin xyz="-0.00035576 -0.00103228 -0.00714888" rpy="0 -0 0"/>
+      <inertia ixx="1.6e-07" ixy="-8.27181e-24" ixz="1e-08" iyy="2.1e-07" iyz="-2e-08" izz="7e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_F23_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_F32_LINK">
+    <visual>
+      <origin xyz="0.0051 0 -0.045" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F32_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0051 0 -0.045" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F32_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.00446884" />
+      <origin xyz="-0.00031853 0.00034526 -0.0116819" rpy="0 -0 0"/>
+      <inertia ixx="3.2e-07" ixy="0" ixz="0" iyy="3.4e-07" iyz="0" izz="9e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_F32_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_F33_LINK">
+    <visual>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F33_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F33_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0028745" />
+      <origin xyz="-0.00035576 -0.00103228 -0.00714888" rpy="0 -0 0"/>
+      <inertia ixx="1.6e-07" ixy="-8.27181e-24" ixz="1e-08" iyy="2.1e-07" iyz="-2e-08" izz="7e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_F33_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_F42_LINK">
+    <visual>
+      <origin xyz="-0.0151 0 -0.045" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F42_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0151 0 -0.045" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F42_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.00446884" />
+      <origin xyz="-0.00031853 0.00034526 -0.0116819" rpy="0 -0 0"/>
+      <inertia ixx="3.2e-07" ixy="0" ixz="0" iyy="3.4e-07" iyz="0" izz="9e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_F42_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_F43_LINK">
+    <visual>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F43_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F43_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0028745" />
+      <origin xyz="-0.00035576 -0.00103228 -0.00714888" rpy="0 -0 0"/>
+      <inertia ixx="1.6e-07" ixy="-8.27181e-24" ixz="1e-08" iyy="2.1e-07" iyz="-2e-08" izz="7e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_F43_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_F52_LINK">
+    <visual>
+      <origin xyz="-0.0353 0 -0.045" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F52_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0353 0 -0.045" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F52_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.00446884" />
+      <origin xyz="-0.00031853 0.00034526 -0.0116819" rpy="0 -0 0"/>
+      <inertia ixx="3.2e-07" ixy="0" ixz="0" iyy="3.4e-07" iyz="0" izz="9e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_F52_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_F53_LINK">
+    <visual>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F53_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.024" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_F53_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0028745" />
+      <origin xyz="-0.00035576 -0.00103228 -0.00714888" rpy="0 -0 0"/>
+      <inertia ixx="1.6e-07" ixy="-8.27181e-24" ixz="1e-08" iyy="2.1e-07" iyz="-2e-08" izz="7e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_F53_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_HIP_Y_LINK">
+    <visual>
+      <origin xyz="0 0.0875 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_HIP_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0875 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_HIP_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.1356" />
+      <origin xyz="-0.0166766 2e-08 0.0499313" rpy="0 -0 0"/>
+      <inertia ixx="0.00151524" ixy="-2.8e-07" ixz="-0.00048566" iyy="0.00231285" iyz="1.90265e-19" izz="0.00149651"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_HIP_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_HIP_R_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_HIP_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_HIP_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.584941" />
+      <origin xyz="-0.00431692 0.00595121 -0.00052352" rpy="0 -0 0"/>
+      <inertia ixx="0.00046475" ixy="-1.508e-05" ixz="-6.5e-07" iyy="0.00029804" iyz="2.39e-06" izz="0.00061763"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_HIP_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_HIP_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_HIP_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_HIP_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.06366" />
+      <origin xyz="0.00400906 -0.00541624 -0.188276" rpy="0 -0 0"/>
+      <inertia ixx="0.0317438" ixy="9.784e-05" ixz="0.00063909" iyy="0.0306862" iyz="-0.00254187" izz="0.00291548"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_HIP_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_KNEE_P_LINK">
+    <visual>
+      <origin xyz="0 -0.01905 -0.358" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.01905 -0.358" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.08123" />
+      <origin xyz="-0.0112211 -0.00133701 -0.152529" rpy="0 -0 0"/>
+      <inertia ixx="0.0190044" ixy="-4.75e-06" ixz="-0.0014589" iyy="0.019441" iyz="2.008e-05" izz="0.00189659"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_KNEE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ANKLE_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.341151" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.341151" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.267847" />
+      <origin xyz="-0.00368911 -0.00015844 0.00129883" rpy="0 -0 0"/>
+      <inertia ixx="8.094e-05" ixy="-1.6e-07" ixz="-1.33e-06" iyy="0.00015522" iyz="-7e-08" izz="0.00017313"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ANKLE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ANKLE_R_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.722878" />
+      <origin xyz="-0.00340792 0 -0.0459159" rpy="0 -0 0"/>
+      <inertia ixx="0.00092215" ixy="-9.9499e-20" ixz="0.00011963" iyy="0.00102289" iyz="-3.78506e-20" izz="0.00089314"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ANKLE_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_FOOT_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_FOOT_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/L_FOOT_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.578316" />
+      <origin xyz="0.0113028 0.0113964 -0.0786842" rpy="0 -0 0"/>
+      <inertia ixx="0.00121526" ixy="-8.51e-06" ixz="2.787e-05" iyy="0.00254705" iyz="2.1e-06" izz="0.00362666"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_FOOT_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_HIP_Y_LINK">
+    <visual>
+      <origin xyz="0 -0.0875 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_HIP_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.0875 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_HIP_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.1356" />
+      <origin xyz="-0.0166766 2e-08 0.0499313" rpy="0 -0 0"/>
+      <inertia ixx="0.00151524" ixy="-2.8e-07" ixz="-0.00048566" iyy="0.00231285" iyz="1.90265e-19" izz="0.00149651"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_HIP_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_HIP_R_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_HIP_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_HIP_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.584941" />
+      <origin xyz="-0.00431692 0.00595121 -0.00052352" rpy="0 -0 0"/>
+      <inertia ixx="0.00046475" ixy="-1.508e-05" ixz="-6.5e-07" iyy="0.00029804" iyz="2.39e-06" izz="0.00061763"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_HIP_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_HIP_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_HIP_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_HIP_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.0648" />
+      <origin xyz="0.00401404 0.0153028 -0.188517" rpy="0 -0 0"/>
+      <inertia ixx="0.0316043" ixy="-3.38e-06" ixz="0.00063965" iyy="0.0307024" iyz="0.00133966" izz="0.00275655"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_HIP_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_KNEE_P_LINK">
+    <visual>
+      <origin xyz="0 0.01905 -0.358" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.01905 -0.358" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.08123" />
+      <origin xyz="-0.0112211 -0.00133701 -0.152529" rpy="0 -0 0"/>
+      <inertia ixx="0.0190044" ixy="-4.75e-06" ixz="-0.0014589" iyy="0.019441" iyz="2.008e-05" izz="0.00189659"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_KNEE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ANKLE_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.341151" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.341151" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.267847" />
+      <origin xyz="-0.00368911 -0.00015844 0.00129883" rpy="0 -0 0"/>
+      <inertia ixx="8.094e-05" ixy="-1.6e-07" ixz="-1.33e-06" iyy="0.00015522" iyz="-7e-08" izz="0.00017313"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ANKLE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ANKLE_R_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.722878" />
+      <origin xyz="-0.00340792 1e-08 -0.0459159" rpy="0 -0 0"/>
+      <inertia ixx="0.00092215" ixy="-9.9499e-20" ixz="0.00011963" iyy="0.00102289" iyz="-3.78506e-20" izz="0.00089314"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ANKLE_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_FOOT_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_FOOT_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/HRP4R_meshes/R_FOOT_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.578316" />
+      <origin xyz="0.0113028 -0.0113964 -0.0786842" rpy="0 -0 0"/>
+      <inertia ixx="0.00121526" ixy="8.51e-06" ixz="2.787e-05" iyy="0.00254705" iyz="-2.1e-06" izz="0.00362666"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_FOOT_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <joint name="CHEST_P" type="revolute">
+    <parent link="BODY"/>
+    <child  link="CHEST_P_LINK"/>
+    <origin xyz="0.01 0 0.197" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.20944" upper="0.523599" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="CHEST_P_trans" >
+    <actuator name="CHEST_P_motor" />
+    <joint name="CHEST_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="CHEST_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="CHEST_Y" type="revolute">
+    <parent link="CHEST_P_LINK"/>
+    <child  link="CHEST_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-0.610865" upper="0.610865" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="CHEST_Y_trans" >
+    <actuator name="CHEST_Y_motor" />
+    <joint name="CHEST_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="CHEST_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_SHOULDER_P" type="revolute">
+    <parent link="CHEST_Y_LINK"/>
+    <child  link="L_SHOULDER_P_LINK"/>
+    <origin xyz="-0.04 0.17 0.285" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.56563" upper="1.0472" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_SHOULDER_P_trans" >
+    <actuator name="L_SHOULDER_P_motor" />
+    <joint name="L_SHOULDER_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_SHOULDER_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_SHOULDER_R" type="revolute">
+    <parent link="L_SHOULDER_P_LINK"/>
+    <child  link="L_SHOULDER_R_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.174533" upper="1.55334" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_SHOULDER_R_trans" >
+    <actuator name="L_SHOULDER_R_motor" />
+    <joint name="L_SHOULDER_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_SHOULDER_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_SHOULDER_Y" type="revolute">
+    <parent link="L_SHOULDER_R_LINK"/>
+    <child  link="L_SHOULDER_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.6057" upper="1.6057" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_SHOULDER_Y_trans" >
+    <actuator name="L_SHOULDER_Y_motor" />
+    <joint name="L_SHOULDER_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_SHOULDER_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ELBOW_P" type="revolute">
+    <parent link="L_SHOULDER_Y_LINK"/>
+    <child  link="L_ELBOW_P_LINK"/>
+    <origin xyz="0 0 -0.283" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.14675" upper="0.0349066" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ELBOW_P_trans" >
+    <actuator name="L_ELBOW_P_motor" />
+    <joint name="L_ELBOW_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ELBOW_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_WRIST_Y" type="revolute">
+    <parent link="L_ELBOW_P_LINK"/>
+    <child  link="L_WRIST_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.6057" upper="1.6057" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_WRIST_Y_trans" >
+    <actuator name="L_WRIST_Y_motor" />
+    <joint name="L_WRIST_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_WRIST_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_WRIST_P" type="revolute">
+    <parent link="L_WRIST_Y_LINK"/>
+    <child  link="L_WRIST_P_LINK"/>
+    <origin xyz="0 0 -0.234" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.715585" upper="0.715585" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_WRIST_P_trans" >
+    <actuator name="L_WRIST_P_motor" />
+    <joint name="L_WRIST_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_WRIST_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_WRIST_R" type="revolute">
+    <parent link="L_WRIST_P_LINK"/>
+    <child  link="L_WRIST_R_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.6057" upper="1.6057" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_WRIST_R_trans" >
+    <actuator name="L_WRIST_R_motor" />
+    <joint name="L_WRIST_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_WRIST_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_HAND_J0" type="revolute">
+    <parent link="L_WRIST_R_LINK"/>
+    <child  link="L_HAND_J0_LINK"/>
+    <origin xyz="0.03419 0 -0.039" rpy="0 0.411898 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.5708" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_HAND_J0_trans" >
+    <actuator name="L_HAND_J0_motor" />
+    <joint name="L_HAND_J0" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_HAND_J0">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_HAND_J1" type="revolute">
+    <parent link="L_WRIST_R_LINK"/>
+    <child  link="L_HAND_J1_LINK"/>
+    <origin xyz="0 0 -0.111" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.5708" upper="0.174533" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_HAND_J1_trans" >
+    <actuator name="L_HAND_J1_motor" />
+    <joint name="L_HAND_J1" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_HAND_J1">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_F22" type="revolute">
+    <parent link="L_HAND_J1_LINK"/>
+    <child  link="L_F22_LINK"/>
+    <origin xyz="0.0253 0 -0.045" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_F22_trans" >
+    <actuator name="L_F22_motor" />
+    <joint name="L_F22" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_F22">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_F23" type="revolute">
+    <parent link="L_F22_LINK"/>
+    <child  link="L_F23_LINK"/>
+    <origin xyz="0 0 -0.024" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_F23_trans" >
+    <actuator name="L_F23_motor" />
+    <joint name="L_F23" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_F23">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_F32" type="revolute">
+    <parent link="L_HAND_J1_LINK"/>
+    <child  link="L_F32_LINK"/>
+    <origin xyz="0.0051 0 -0.045" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_F32_trans" >
+    <actuator name="L_F32_motor" />
+    <joint name="L_F32" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_F32">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_F33" type="revolute">
+    <parent link="L_F32_LINK"/>
+    <child  link="L_F33_LINK"/>
+    <origin xyz="0 0 -0.024" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_F33_trans" >
+    <actuator name="L_F33_motor" />
+    <joint name="L_F33" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_F33">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_F42" type="revolute">
+    <parent link="L_HAND_J1_LINK"/>
+    <child  link="L_F42_LINK"/>
+    <origin xyz="-0.0151 0 -0.045" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_F42_trans" >
+    <actuator name="L_F42_motor" />
+    <joint name="L_F42" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_F42">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_F43" type="revolute">
+    <parent link="L_F42_LINK"/>
+    <child  link="L_F43_LINK"/>
+    <origin xyz="0 0 -0.024" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_F43_trans" >
+    <actuator name="L_F43_motor" />
+    <joint name="L_F43" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_F43">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_F52" type="revolute">
+    <parent link="L_HAND_J1_LINK"/>
+    <child  link="L_F52_LINK"/>
+    <origin xyz="-0.0353 0 -0.045" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_F52_trans" >
+    <actuator name="L_F52_motor" />
+    <joint name="L_F52" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_F52">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_F53" type="revolute">
+    <parent link="L_F52_LINK"/>
+    <child  link="L_F53_LINK"/>
+    <origin xyz="0 0 -0.024" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_F53_trans" >
+    <actuator name="L_F53_motor" />
+    <joint name="L_F53" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_F53">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="NECK_Y" type="revolute">
+    <parent link="CHEST_Y_LINK"/>
+    <child  link="NECK_Y_LINK"/>
+    <origin xyz="-0.04 0 0.434" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.22173" upper="1.22173" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="NECK_Y_trans" >
+    <actuator name="NECK_Y_motor" />
+    <joint name="NECK_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="NECK_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="NECK_P" type="revolute">
+    <parent link="NECK_Y_LINK"/>
+    <child  link="NECK_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.523599" upper="0.436332" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="NECK_P_trans" >
+    <actuator name="NECK_P_motor" />
+    <joint name="NECK_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="NECK_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_SHOULDER_P" type="revolute">
+    <parent link="CHEST_Y_LINK"/>
+    <child  link="R_SHOULDER_P_LINK"/>
+    <origin xyz="-0.04 -0.17 0.285" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.56563" upper="1.0472" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_SHOULDER_P_trans" >
+    <actuator name="R_SHOULDER_P_motor" />
+    <joint name="R_SHOULDER_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_SHOULDER_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_SHOULDER_R" type="revolute">
+    <parent link="R_SHOULDER_P_LINK"/>
+    <child  link="R_SHOULDER_R_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.55334" upper="0.174533" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_SHOULDER_R_trans" >
+    <actuator name="R_SHOULDER_R_motor" />
+    <joint name="R_SHOULDER_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_SHOULDER_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_SHOULDER_Y" type="revolute">
+    <parent link="R_SHOULDER_R_LINK"/>
+    <child  link="R_SHOULDER_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.6057" upper="1.6057" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_SHOULDER_Y_trans" >
+    <actuator name="R_SHOULDER_Y_motor" />
+    <joint name="R_SHOULDER_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_SHOULDER_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ELBOW_P" type="revolute">
+    <parent link="R_SHOULDER_Y_LINK"/>
+    <child  link="R_ELBOW_P_LINK"/>
+    <origin xyz="0 0 -0.283" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.14675" upper="0.0349066" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ELBOW_P_trans" >
+    <actuator name="R_ELBOW_P_motor" />
+    <joint name="R_ELBOW_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ELBOW_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_WRIST_Y" type="revolute">
+    <parent link="R_ELBOW_P_LINK"/>
+    <child  link="R_WRIST_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.6057" upper="1.6057" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_WRIST_Y_trans" >
+    <actuator name="R_WRIST_Y_motor" />
+    <joint name="R_WRIST_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_WRIST_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_WRIST_P" type="revolute">
+    <parent link="R_WRIST_Y_LINK"/>
+    <child  link="R_WRIST_P_LINK"/>
+    <origin xyz="0 0 -0.234" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.715585" upper="0.715585" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_WRIST_P_trans" >
+    <actuator name="R_WRIST_P_motor" />
+    <joint name="R_WRIST_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_WRIST_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_WRIST_R" type="revolute">
+    <parent link="R_WRIST_P_LINK"/>
+    <child  link="R_WRIST_R_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.6057" upper="1.6057" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_WRIST_R_trans" >
+    <actuator name="R_WRIST_R_motor" />
+    <joint name="R_WRIST_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_WRIST_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_HAND_J0" type="revolute">
+    <parent link="R_WRIST_R_LINK"/>
+    <child  link="R_HAND_J0_LINK"/>
+    <origin xyz="0.03419 0 -0.039" rpy="0 0.411898 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_HAND_J0_trans" >
+    <actuator name="R_HAND_J0_motor" />
+    <joint name="R_HAND_J0" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_HAND_J0">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_HAND_J1" type="revolute">
+    <parent link="R_WRIST_R_LINK"/>
+    <child  link="R_HAND_J1_LINK"/>
+    <origin xyz="0 0 -0.111" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.174533" upper="1.5708" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_HAND_J1_trans" >
+    <actuator name="R_HAND_J1_motor" />
+    <joint name="R_HAND_J1" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_HAND_J1">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_F22" type="revolute">
+    <parent link="R_HAND_J1_LINK"/>
+    <child  link="R_F22_LINK"/>
+    <origin xyz="0.0253 0 -0.045" rpy="0 -0 3.14159 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_F22_trans" >
+    <actuator name="R_F22_motor" />
+    <joint name="R_F22" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_F22">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_F23" type="revolute">
+    <parent link="R_F22_LINK"/>
+    <child  link="R_F23_LINK"/>
+    <origin xyz="0 0 -0.024" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_F23_trans" >
+    <actuator name="R_F23_motor" />
+    <joint name="R_F23" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_F23">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_F32" type="revolute">
+    <parent link="R_HAND_J1_LINK"/>
+    <child  link="R_F32_LINK"/>
+    <origin xyz="0.0051 0 -0.045" rpy="0 -0 3.14159 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_F32_trans" >
+    <actuator name="R_F32_motor" />
+    <joint name="R_F32" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_F32">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_F33" type="revolute">
+    <parent link="R_F32_LINK"/>
+    <child  link="R_F33_LINK"/>
+    <origin xyz="0 0 -0.024" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_F33_trans" >
+    <actuator name="R_F33_motor" />
+    <joint name="R_F33" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_F33">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_F42" type="revolute">
+    <parent link="R_HAND_J1_LINK"/>
+    <child  link="R_F42_LINK"/>
+    <origin xyz="-0.0151 0 -0.045" rpy="0 -0 3.14159 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_F42_trans" >
+    <actuator name="R_F42_motor" />
+    <joint name="R_F42" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_F42">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_F43" type="revolute">
+    <parent link="R_F42_LINK"/>
+    <child  link="R_F43_LINK"/>
+    <origin xyz="0 0 -0.024" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_F43_trans" >
+    <actuator name="R_F43_motor" />
+    <joint name="R_F43" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_F43">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_F52" type="revolute">
+    <parent link="R_HAND_J1_LINK"/>
+    <child  link="R_F52_LINK"/>
+    <origin xyz="-0.0353 0 -0.045" rpy="0 -0 3.14159 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_F52_trans" >
+    <actuator name="R_F52_motor" />
+    <joint name="R_F52" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_F52">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_F53" type="revolute">
+    <parent link="R_F52_LINK"/>
+    <child  link="R_F53_LINK"/>
+    <origin xyz="0 0 -0.024" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.22173" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_F53_trans" >
+    <actuator name="R_F53_motor" />
+    <joint name="R_F53" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_F53">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_HIP_Y" type="revolute">
+    <parent link="BODY"/>
+    <child  link="L_HIP_Y_LINK"/>
+    <origin xyz="0 0.0875 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-0.785398" upper="0.785398" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_HIP_Y_trans" >
+    <actuator name="L_HIP_Y_motor" />
+    <joint name="L_HIP_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_HIP_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_HIP_R" type="revolute">
+    <parent link="L_HIP_Y_LINK"/>
+    <child  link="L_HIP_R_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.436332" upper="0.436332" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_HIP_R_trans" >
+    <actuator name="L_HIP_R_motor" />
+    <joint name="L_HIP_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_HIP_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_HIP_P" type="revolute">
+    <parent link="L_HIP_R_LINK"/>
+    <child  link="L_HIP_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.3439" upper="0.418879" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_HIP_P_trans" >
+    <actuator name="L_HIP_P_motor" />
+    <joint name="L_HIP_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_HIP_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_KNEE_P" type="revolute">
+    <parent link="L_HIP_P_LINK"/>
+    <child  link="L_KNEE_P_LINK"/>
+    <origin xyz="0 -0.01905 -0.358" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.0122173" upper="2.17643" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_KNEE_P_trans" >
+    <actuator name="L_KNEE_P_motor" />
+    <joint name="L_KNEE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_KNEE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ANKLE_P" type="revolute">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="L_ANKLE_P_LINK"/>
+    <origin xyz="0 0 -0.341151" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.989602" upper="0.267035" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ANKLE_P_trans" >
+    <actuator name="L_ANKLE_P_motor" />
+    <joint name="L_ANKLE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ANKLE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ANKLE_R" type="revolute">
+    <parent link="L_ANKLE_P_LINK"/>
+    <child  link="L_ANKLE_R_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.593412" upper="0.593412" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ANKLE_R_trans" >
+    <actuator name="L_ANKLE_R_motor" />
+    <joint name="L_ANKLE_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ANKLE_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_FOOT" type="fixed">
+    <parent link="L_ANKLE_R_LINK"/>
+    <child  link="L_FOOT_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_FOOT_trans" >
+    <actuator name="L_FOOT_motor" />
+    <joint name="L_FOOT" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_FOOT">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_HIP_Y" type="revolute">
+    <parent link="BODY"/>
+    <child  link="R_HIP_Y_LINK"/>
+    <origin xyz="0 -0.0875 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-0.785398" upper="0.785398" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_HIP_Y_trans" >
+    <actuator name="R_HIP_Y_motor" />
+    <joint name="R_HIP_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_HIP_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_HIP_R" type="revolute">
+    <parent link="R_HIP_Y_LINK"/>
+    <child  link="R_HIP_R_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.436332" upper="0.436332" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_HIP_R_trans" >
+    <actuator name="R_HIP_R_motor" />
+    <joint name="R_HIP_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_HIP_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_HIP_P" type="revolute">
+    <parent link="R_HIP_R_LINK"/>
+    <child  link="R_HIP_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.3439" upper="0.418879" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_HIP_P_trans" >
+    <actuator name="R_HIP_P_motor" />
+    <joint name="R_HIP_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_HIP_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_KNEE_P" type="revolute">
+    <parent link="R_HIP_P_LINK"/>
+    <child  link="R_KNEE_P_LINK"/>
+    <origin xyz="0 0.01905 -0.358" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.0122173" upper="2.17643" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_KNEE_P_trans" >
+    <actuator name="R_KNEE_P_motor" />
+    <joint name="R_KNEE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_KNEE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ANKLE_P" type="revolute">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="R_ANKLE_P_LINK"/>
+    <origin xyz="0 0 -0.341151" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.989602" upper="0.267035" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ANKLE_P_trans" >
+    <actuator name="R_ANKLE_P_motor" />
+    <joint name="R_ANKLE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ANKLE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ANKLE_R" type="revolute">
+    <parent link="R_ANKLE_P_LINK"/>
+    <child  link="R_ANKLE_R_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.593412" upper="0.593412" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ANKLE_R_trans" >
+    <actuator name="R_ANKLE_R_motor" />
+    <joint name="R_ANKLE_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ANKLE_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_FOOT" type="fixed">
+    <parent link="R_ANKLE_R_LINK"/>
+    <child  link="R_FOOT_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_FOOT_trans" >
+    <actuator name="R_FOOT_motor" />
+    <joint name="R_FOOT" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_FOOT">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+</robot>

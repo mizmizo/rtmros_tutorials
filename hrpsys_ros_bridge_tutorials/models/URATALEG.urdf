@@ -1,0 +1,496 @@
+<?xml version="1.0"?>
+<robot name="URATALEG"
+       xmlns:xi="http://www.w3.org/2001/XInclude"
+       >
+  <link name="BODY">
+    <visual>
+      <origin xyz="0 0 0.696" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/BODY_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.696" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/BODY_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="28.1169" />
+      <origin xyz="0.03146 0.00157346 0.327233" rpy="0 -0 0"/>
+      <inertia ixx="3.8602" ixy="0.00022" ixz="0.33609" iyy="3.98499" iyz="0.021859" izz="0.810382"/>
+    </inertial>
+  </link>
+  <gazebo reference="BODY">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_LINK0">
+    <visual>
+      <origin xyz="0 0.08 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK0_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.08 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK0_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.965961" />
+      <origin xyz="-0.0250761 0.025239 0.022762" rpy="0 -0 0"/>
+      <inertia ixx="0.003171" ixy="-0.000746" ixz="-0.000358" iyy="0.002687" iyz="0.000752" izz="0.003681"/>
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_LINK0">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_LINK1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK1_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK1_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.199241" />
+      <origin xyz="8e-08 0.00338762 0" rpy="0 -0 0"/>
+      <inertia ixx="0.000106" ixy="0" ixz="0" iyy="0.000119" iyz="0" izz="0.000151"/>
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_LINK1">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_LINK2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK2_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK2_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.83852" />
+      <origin xyz="0.00726726 0.00769218 -0.183034" rpy="0 -0 0"/>
+      <inertia ixx="0.135308" ixy="0.000616" ixz="-0.005472" iyy="0.134398" iyz="-0.010481" izz="0.006904"/>
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_LINK2">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_LINK3">
+    <visual>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK3_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK3_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.98982" />
+      <origin xyz="0.0336965 0.00823049 -0.157839" rpy="0 -0 0"/>
+      <inertia ixx="0.07109" ixy="0.000354" ixz="-0.006236" iyy="0.074805" iyz="-0.004063" izz="0.007001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_LINK3">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_LINK4">
+    <visual>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK4_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK4_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.199241" />
+      <origin xyz="-8e-08 -0.00338762 0" rpy="0 -0 0"/>
+      <inertia ixx="0.000106" ixy="0" ixz="0" iyy="0.000119" iyz="0" izz="0.000151"/>
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_LINK4">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LLEG_LINK5">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK5_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/LLEG_LINK5_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.87904" />
+      <origin xyz="-0.00978746 0.00576015 -0.0539316" rpy="0 -0 0"/>
+      <inertia ixx="0.011488" ixy="-0.00054" ixz="-1.4e-05" iyy="0.011398" iyz="-0.000527" izz="0.006769"/>
+    </inertial>
+  </link>
+  <gazebo reference="LLEG_LINK5">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_LINK0">
+    <visual>
+      <origin xyz="0 -0.08 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK0_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.08 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK0_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.965961" />
+      <origin xyz="-0.0250761 -0.025239 0.022762" rpy="0 -0 0"/>
+      <inertia ixx="0.003171" ixy="0.000746" ixz="-0.000358" iyy="0.002777" iyz="-0.000752" izz="0.00377"/>
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_LINK0">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_LINK1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK1_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK1_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.199241" />
+      <origin xyz="8.4e-08 -0.00338762 0" rpy="0 -0 0"/>
+      <inertia ixx="0.000106" ixy="0" ixz="0" iyy="0.000119" iyz="0" izz="0.000151"/>
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_LINK1">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_LINK2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK2_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK2_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="3.04852" />
+      <origin xyz="0.00607187 -0.00826841 -0.186149" rpy="0 -0 0"/>
+      <inertia ixx="0.147854" ixy="-0.001089" ixz="-0.00683" iyy="0.147792" iyz="0.011558" izz="0.007825"/>
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_LINK2">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_LINK3">
+    <visual>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK3_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK3_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.06249" />
+      <origin xyz="0.0205231 -0.00805327 -0.166646" rpy="0 -0 0"/>
+      <inertia ixx="0.077364" ixy="-0.000302" ixz="-0.004748" iyy="0.078942" iyz="0.004191" izz="0.004672"/>
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_LINK3">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_LINK4">
+    <visual>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK4_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK4_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.199241" />
+      <origin xyz="-8e-08 0.00338762 0" rpy="0 -0 0"/>
+      <inertia ixx="0.000106" ixy="0" ixz="0" iyy="0.000119" iyz="0" izz="0.000151"/>
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_LINK4">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RLEG_LINK5">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK5_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://hrpsys_ros_bridge_tutorials/models/URATALEG_meshes/RLEG_LINK5_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.94216" />
+      <origin xyz="-0.0113344 -0.0164028 -0.0534857" rpy="0 -0 0"/>
+      <inertia ixx="0.012487" ixy="0.000888" ixz="9.1e-05" iyy="0.011624" iyz="0.001215" izz="0.007705"/>
+    </inertial>
+  </link>
+  <gazebo reference="RLEG_LINK5">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <joint name="LLEG_JOINT0" type="revolute">
+    <parent link="BODY"/>
+    <child  link="LLEG_LINK0"/>
+    <origin xyz="0 0.08 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-0.523599" upper="0.785398" effort="100" velocity="3.54108" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LLEG_JOINT0_trans" >
+    <actuator name="LLEG_JOINT0_motor" />
+    <joint name="LLEG_JOINT0" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LLEG_JOINT0">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LLEG_JOINT1" type="revolute">
+    <parent link="LLEG_LINK0"/>
+    <child  link="LLEG_LINK1"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.349066" upper="0.610865" effort="100" velocity="3.80952" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LLEG_JOINT1_trans" >
+    <actuator name="LLEG_JOINT1_motor" />
+    <joint name="LLEG_JOINT1" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LLEG_JOINT1">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LLEG_JOINT2" type="revolute">
+    <parent link="LLEG_LINK1"/>
+    <child  link="LLEG_LINK2"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.18166" upper="0.733038" effort="100" velocity="4.42233" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LLEG_JOINT2_trans" >
+    <actuator name="LLEG_JOINT2_motor" />
+    <joint name="LLEG_JOINT2" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LLEG_JOINT2">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LLEG_JOINT3" type="revolute">
+    <parent link="LLEG_LINK2"/>
+    <child  link="LLEG_LINK3"/>
+    <origin xyz="0 0 -0.3" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.0349066" upper="2.61799" effort="100" velocity="3.9801" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LLEG_JOINT3_trans" >
+    <actuator name="LLEG_JOINT3_motor" />
+    <joint name="LLEG_JOINT3" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LLEG_JOINT3">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LLEG_JOINT4" type="revolute">
+    <parent link="LLEG_LINK3"/>
+    <child  link="LLEG_LINK4"/>
+    <origin xyz="0 0 -0.3" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.309" upper="0.733038" effort="100" velocity="5.07937" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LLEG_JOINT4_trans" >
+    <actuator name="LLEG_JOINT4_motor" />
+    <joint name="LLEG_JOINT4" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LLEG_JOINT4">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LLEG_JOINT5" type="revolute">
+    <parent link="LLEG_LINK4"/>
+    <child  link="LLEG_LINK5"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.610865" upper="0.349066" effort="100" velocity="9.14286" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LLEG_JOINT5_trans" >
+    <actuator name="LLEG_JOINT5_motor" />
+    <joint name="LLEG_JOINT5" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LLEG_JOINT5">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RLEG_JOINT0" type="revolute">
+    <parent link="BODY"/>
+    <child  link="RLEG_LINK0"/>
+    <origin xyz="0 -0.08 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-0.785398" upper="0.523599" effort="100" velocity="3.54108" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RLEG_JOINT0_trans" >
+    <actuator name="RLEG_JOINT0_motor" />
+    <joint name="RLEG_JOINT0" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RLEG_JOINT0">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RLEG_JOINT1" type="revolute">
+    <parent link="RLEG_LINK0"/>
+    <child  link="RLEG_LINK1"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.610865" upper="0.349066" effort="100" velocity="3.80952" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RLEG_JOINT1_trans" >
+    <actuator name="RLEG_JOINT1_motor" />
+    <joint name="RLEG_JOINT1" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RLEG_JOINT1">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RLEG_JOINT2" type="revolute">
+    <parent link="RLEG_LINK1"/>
+    <child  link="RLEG_LINK2"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.18166" upper="0.733038" effort="100" velocity="4.42233" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RLEG_JOINT2_trans" >
+    <actuator name="RLEG_JOINT2_motor" />
+    <joint name="RLEG_JOINT2" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RLEG_JOINT2">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RLEG_JOINT3" type="revolute">
+    <parent link="RLEG_LINK2"/>
+    <child  link="RLEG_LINK3"/>
+    <origin xyz="0 0 -0.3" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.0349066" upper="2.61799" effort="100" velocity="3.9801" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RLEG_JOINT3_trans" >
+    <actuator name="RLEG_JOINT3_motor" />
+    <joint name="RLEG_JOINT3" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RLEG_JOINT3">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RLEG_JOINT4" type="revolute">
+    <parent link="RLEG_LINK3"/>
+    <child  link="RLEG_LINK4"/>
+    <origin xyz="0 0 -0.3" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.309" upper="0.733038" effort="100" velocity="5.07937" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RLEG_JOINT4_trans" >
+    <actuator name="RLEG_JOINT4_motor" />
+    <joint name="RLEG_JOINT4" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RLEG_JOINT4">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RLEG_JOINT5" type="revolute">
+    <parent link="RLEG_LINK4"/>
+    <child  link="RLEG_LINK5"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.349066" upper="0.610865" effort="100" velocity="9.14286" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RLEG_JOINT5_trans" >
+    <actuator name="RLEG_JOINT5_motor" />
+    <joint name="RLEG_JOINT5" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RLEG_JOINT5">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+</robot>
